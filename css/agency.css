@@ -148,10 +148,9 @@ body {
 
     .navbar-default.navbar-shrink { /* nav descendante*/
         padding: 0.2em 0;
-        background-color: #080e30;}
-        /* background-image: url(../img/em.png);
-        background-position: center;
-        background-repeat: no-repeat;} */
+background-image: url(../img/em.png);
+background-position: center;
+background-repeat: no-repeat;}
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;}
