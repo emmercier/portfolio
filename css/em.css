@@ -24,10 +24,13 @@ body {
     -o-background-size: cover;
 }
 
+@media(max-width:767px) {section {padding: 50px 0;}}
+@media(min-width:768px) {section {padding: 100px 0;}}
 
 /* ********************************
             NAVIGATION
 ******************************** */
+
 /*elements de nav centrés*/
 @media(min-width:768px) {.perso {display: inline-block; line-height: 1.4em; width: 140px;}}
 @media(min-width:992px) {.perso {display: inline-block; line-height: 1.4em; width: 170px;}}
@@ -47,32 +50,17 @@ body {
     background-image: transparent;
     border-color: transparent;}
 
-@media(min-width:600px){
-    .navbar-default {
-        text-transform: uppercase;
-        font-family: "Playfair Display",Helvetica,Arial,sans-serif;
-        font-size: 1.3em;
-        background-image: transparent;
-        border-color: transparent;}}
-
-@media(min-width:992px){
-    .navbar-default { 
-        text-transform: uppercase;
-        font-family: "Playfair Display",Helvetica,Arial,sans-serif;
-        font-size: 1.6em;
-        background-image: transparent;
-        border-color: transparent;}}
+@media(min-width:600px){.navbar-default {font-size: 1.3em;}}
+@media(min-width:992px){.navbar-default {font-size: 1.6em;}}
 
 .navbar .navbar-nav {display: inline-block; float: none; vertical-align: top;}
 
-/* Nav réduite */
 .navbar .navbar-collapse {text-align: center; }
+
 .navbar-default .navbar-collapse {border-color: rgba(255,255,255,.02);}
 
-@media(max-width:767px){
-    .navbar-collapse {
-        background-image: url(../img/archesbeige.png);
-        background-size: 175%;}}
+/* Nav réduite */
+@media(max-width:767px){.navbar-collapse {background-image: url(../img/archesbeige.png); background-size: 175%;}}
 
 .navbar-default .navbar-toggle {
     border-color: #ff271b;
@@ -85,33 +73,19 @@ body {
 .navbar-default .navbar-toggle:focus {
     background-color: #ff271b;}
 
- .navbar-default.navbar-shrink .nav li a {
-    color: #fffdf1;}
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
-    outline: 0;
-    color: #ff271b;}
+.navbar-default.navbar-shrink .nav li a {color: #fffdf1;}
+
+.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {outline: 0; color: #ff271b;}
 
 
 @media(max-width:767px) {
-    .navbar-default .navbar-nav {
-        background-color: transparent;
-        padding-bottom: 0.5em;}}
+.navbar-default.navbar-shrink .nav li a {color: #080e30;}
+.navbar-default .navbar-nav>.active>a { background-color: transparent; color: #ff271b; padding-bottom: 0.5em;}}
 
-@media(max-width:767px) {
-.navbar-default .navbar-nav>.active>a {
-    background-color: transparent;
-    padding-bottom: 0.5em;}}
 
 @media(min-width:768px) {
-.navbar-default .navbar-nav>.active>a {
-    color: #fffdf1;
-   /*  border: 0.1em;
-   border-bottom-style: dotted;
-   border-color: #ff271b; */
-    background-color: transparent;
-    padding-bottom: 0.5em;}}
+.navbar-default .navbar-nav>.active>a { color: #fffdf1; background-color: transparent; padding-bottom: 0.5em;}}
 
 .navbar-default .navbar-nav>.active>a.logoem,
 .navbar-default .navbar-nav>.active>a.logoem:hover {
@@ -122,9 +96,6 @@ body {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color:  #ff271b;
-    /* border: 0.1em; */
-    /* border-bottom-style: dotted; */
-    /* border-color: #ff271b; */
     background-color: transparent;
     padding-bottom: 0.5em;}
 
@@ -137,50 +108,35 @@ body {
         -moz-transition: padding .3s;
         transition: padding .3s;}
 
-    .navbar-default .navbar-brand {
-        font-size: 1.8em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;}
-
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;}
 
     .navbar-default.navbar-shrink { /* nav descendante*/
         padding: 0.2em 0;
-background-image: url(../img/em.png);
-background-position: center;
-background-repeat: no-repeat;}
-
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;}
+        background-image: url(../img/em.png);
+        background-position: center;
+        background-repeat: no-repeat;}
 }
 
 
 /* ********************************
             PARAGRAPHES
 ******************************** */
-p {font-size: 1.2em; line-height: 1.75;}
+
+p {font-size: 1.1em; line-height: 1.75;}
 
 
 /* ********************************
         SECTION HEADER
 ******************************** */
-header {
-    color: #080e30;
-    text-align: center;
-}
 
-.landing {height: 100%;}
+header {color: #080e30; text-align: center;}
 
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+header .intro-text {padding-top: 100px; padding-bottom: 100px;}
 
 header .intro-text .intro-lead-in {
     font-family: "Great Vibes",Times,serif;
-    font-size: 4.5em;
+   /*  font-size: 4.5em; */
     font-style: normal;
     line-height: auto;
     text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
@@ -189,133 +145,103 @@ header .intro-text .intro-heading {
     margin-top: -0.5em;
     margin-bottom: 2em;
     font-family: "Great Vibes",Times,serif;
-    font-size: 2.5em;
+/*     font-size: 2.5em; */
     line-height: auto;
     text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
 
 header .fa {margin-top: 6em; font-size: 3em;}
 
 @media(max-width:359px) {
-    header .intro-text .intro-lead-in {
-        margin-top: 1.5em;
-        font-size: 3em;
-        font-style: normal;
-        line-height: auto;}
-
-    header .intro-text .intro-heading {
-        margin-top: -0.5em;
-        margin-bottom: -1em;
-        font-size: 2.3em;
-        line-height: auto;}
-
-    header .fa {margin-top: 5em; font-size: 3em;}
+    header .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3em;}
+    header .intro-text .intro-heading {font-size: 2.3em;}
+    header .fa {margin-top: 3em;}
 }
 
 @media(min-width:360px) and (max-width: 479px){
-    header .intro-text .intro-lead-in {
-        margin-top: 1.5em;
-        font-size: 3.7em;
-        font-style: normal;
-        line-height: auto;}
-
-    header .intro-text .intro-heading {
-        margin-top: -0.5em;
-        margin-bottom: -1em;
-        font-size: 2.5em;
-        line-height: auto;}
-
-    header .fa {margin-top: 6em; font-size: 3em;}
+    header .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3.7em;}
+    header .intro-text .intro-heading {margin-bottom: -1em; font-size: 2.5em;}
+    header .fa {margin-top: 7em;}
 }
 
 @media(min-width:480px) {
-    header .intro-text {
-        padding-top: 16em;
-        padding-bottom: 4em;}
-
-    header .intro-text .intro-lead-in {
-        font-size: 4.8em;}
-
-    header .intro-text .intro-heading {
-        font-size: 2.5em;}
-
-    header .fa {margin-top: 3em; font-size: 3em;}
+    header .intro-text {padding-top: 16em;padding-bottom: 4em;}
+    header .intro-text .intro-lead-in {font-size: 4.8em;}
+    header .intro-text .intro-heading {font-size: 2.5em;}
+    header .fa {margin-top: 3em;}
 }
 
 @media(min-width:600px) {
-    header .intro-text {
-        padding-top: 16em;
-        padding-bottom: 4em;}
-
-    header .intro-text .intro-lead-in {
-        font-size: 6em;}
-
-    header .intro-text .intro-heading {
-        font-size: 3em;}
-
-    header .fa {margin-top: 5.5em; font-size: 3em;}
+    header .intro-text {padding-top: 16em;padding-bottom: 4em;}
+    header .intro-text .intro-lead-in {font-size: 6em;}
+    header .intro-text .intro-heading {font-size: 3em;}
+    header .fa {margin-top: 5.5em;}
 }
 
 @media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 3em;
-        color: #080e30;}
-
-    header .intro-text .intro-lead-in {
-        font-family: "Great Vibes",Times,serif;
-        font-size: 7em;
-        font-style: normal;
-        line-height: auto;}
-
-    header .intro-text .intro-heading {
-        /* margin-bottom: 2em; */
-        margin-top: -0.5em;
-        font-family: "Great Vibes","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 3.5em;
-        line-height: auto;
-        text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
-
-    header .fa {margin-top: 4em; font-size: 3em; margin-bottom: 1em;}
+    header .intro-text {padding-top: 16em;padding-bottom: 3em;}
+    header .intro-text .intro-lead-in {font-size: 7em;}
+    header .intro-text .intro-heading {font-size: 3.5em;}
+    header .fa {margin-top: 4em; font-size: 3em;}
 }
 
+@media(min-width:1200px) {header .fa {margin-top: 7em; font-size: 3em;}}
 
 
 /* ********************************
         SECTION INTRODUCTION
 ******************************** */
+
 section#introduction {
     padding: 100px 0;
-background-image: url(../img/archesbleues.png);
-background-position: center;
-background-repeat: repeat-x;
+    background-image: url(../img/archesbleues.png);
+    background-position: center;
+    background-repeat: repeat-x;
     color: #fffdf1;}
 
-@media(max-width:479px) {
-    p.intro {
-        font-size: 1.2em;
-        margin-top:2em; }}
+p.intro {margin-top:3em; font-size: 1.25em; font-style: italic;}
+@media(min-width:1200px){p.intro {margin-top:3em; font-size: 1.4em; font-style: italic;}}
 
-@media(min-width:768px) {
-    p.intro {
-        font-family: "Playfair Display";
-        font-size: 1.4em;
-        line-height: 1.4;
-        font-style: italic;
-        margin-top:1em; }}
-
-hr.bjr{  width: 10em; color: #fffdf1; margin-top: 1.5em;}
+hr.bjr{width: 8em; color: #fffdf1; margin-top: 1.5em;}
 
 
 /* ********************************
         SECTION SERVICE
 ******************************** */
+
 p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 @media(max-width:479px){p.service {font-size:1em;}div.editorial, div.developpement, div.accompagnement{margin-bottom: 3em;}}
+
+/* Bouton orange Services */
+.btnperso {
+    margin-top: 3em;
+    padding: 1.25em 2.5em;
+    border: 0.15em;
+    border-style: dotted;
+    border-color: #ff271b;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
+    font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #ff271b;
+    background-color: transparent;}
+
+.btnperso:hover, .btnperso2:hover, .btnperso:focus, .btnperso2:focus,
+.btnperso:active, .btnperso2:active, .btnperso.active,
+.open .dropdown-toggle.btnperso {
+    border-color: #fffdf1; color: #fffdf1; background-color: #ff271b}
 
 
 /* ********************************
         SECTION PORTFOLIO
 ******************************** */
+
+#portfolio .portfolio-item {right: 0; margin: 0 0 4em;}
+#portfolio .portfolio-item .portfolio-link {display: block; position: relative; margin: 0 auto; max-width: 400px;}
+#portfolio * {z-index: 2;}
+
+@media(min-width:767px) {#portfolio .portfolio-item {margin: 0 0 30px;}}
+
 /* Bouton orange Portfolio */
 .btnperso2 {
     margin-top: 1em;
@@ -326,220 +252,97 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
     border-radius: 3px;
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
     font-family: "Playfair Display",Helvetica,Arial,sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     color: #ff271b;
     background-color: transparent;}
 
 
-@media(max-width:767px){ 
-    .btnperso2 {margin-top: 1em;}
-    .txtpf {margin-top: 4em; font-size: 1.1em;}}
-
-@media(min-width:768px){ 
-    .btnperso2 {margin-top: 1em;}
-    .txtpf {margin-top: 6em;}}
-
-@media(min-width:992px){ /
-    .btnperso2 {margin-top: 0.5em;}
-    .txtpf {margin-top: 1em;}}
-
-@media(min-width:1300px){ 
-    .btnperso2 {margin-top: 0.5em;}
-    .txtpf {margin-top: 3em;}}
+@media(max-width:767px){.btnperso2 {margin-top: 1em;}.txtpf {margin-top: 4em;}}
+@media(min-width:768px){.btnperso2 {margin-top: 1em;}.txtpf {margin-top: 6em;}}
+@media(min-width:992px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 1em;}}
+@media(min-width:1300px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 3em;}}
 
 /* ********************************
         SECTION CONTACT
 ******************************** */
-p.contact {font-size: 1.4em; line-height: 1.75;}
-@media(max-width: 480px) {p.contact {font-size: 1.2em;}.list-inline>li {padding:0 0 0 0;}}
 
-hr.soush2contact {width: 10%; color:#fffdf1; margin-top: 1.5em; margin-bottom: 3em;}
+p.contact {font-size: 1.25em;}
+@media(max-width: 600px) {p.contact {font-size: 1.1em;}.list-inline>li {margin-right:-0.8em;}}
 
-section#contact {
-    background-image: url(../img/archesbleues.png);
-    background-position: center;
-    background-repeat: repeat repeat;
-    color: #fffdf1;
-}
+hr.soush2contact {width: 8em; color:#fffdf1; margin-top: 1.5em; margin-bottom: 3em;}
 
-section#contact .form-group {
-    margin-bottom: 2em;
-}
+section#contact {background-image: url(../img/archesbleues.png); background-position: center; background-repeat: repeat repeat; color: #fffdf1;}
+
+section#contact .form-group {margin-bottom: 2em;}
 
 section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 1.25em;
-}
+section#contact .form-group textarea {padding: 1.25em;}
 
-section#contact .form-group input.form-control {
-    height: auto;
-}
+section#contact .form-group input.form-control {height: auto;}
 
-section#contact .form-group textarea.form-control {
-    height: 14.75em;
-}
+section#contact .form-group textarea.form-control {height: 14.75em;}
 
-section#contact .form-control:focus {
-    border-color: #ff271b;
-    box-shadow: none;
-}
+section#contact .form-control:focus {border-color: #ff271b; box-shadow: none;}
 
-section#contact::-webkit-input-placeholder {
-    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+@media(max-width: 991px) {section#contact .form-group input, section#contact .form-group textarea {padding: 1em;}.form-control{font-size: 1.1em;}}
 
-section#contact:-moz-placeholder {
-    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+section#contact::-webkit-input-placeholder {font-family: "Playfair Display",Helvetica,Arial,sans-serif;}
+section#contact:-moz-placeholder {font-family: "Playfair Display",Helvetica,Arial,sans-serif;}
+section#contact::-moz-placeholder {font-family: "Playfair Display",Helvetica,Arial,sans-serif;}
+section#contact:-ms-input-placeholder {font-family: "Playfair Display",Helvetica,Arial,sans-serif;}
 
-section#contact::-moz-placeholder {
-    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+section#contact .text-danger {color: #ff271b;}
 
-section#contact:-ms-input-placeholder {
-    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+div.icones{margin-top: 4em;margin-bottom: 4em;}
 
-section#contact .text-danger {
-    color: #ff271b;
-}
-
-div.icones{
-    margin-top: 4em;
-    margin-bottom: 2em;
-}
-
-/* .cerf{margin-top: 3em;margin-bottom: 2em; width:60%;} */
+/* .cerf{margin-top: 3em;margin-bottom: 2em; width:60%;}
 @media(min-width: 992px){.cerf{margin-top: 3em;margin-bottom: 2em; width:75%;}}
 @media(max-width: 991px){.cerf{margin-top: 3em;margin-bottom: 2em; width:45%;}}
-@media(max-width: 480px){.cerf{margin-top: 3em;margin-bottom: 2em; width:100%;}}
+@media(max-width: 480px){.cerf{margin-top: 3em;margin-bottom: 2em; width:100%;}} */
 
-ul{
-    list-style-type:none; 
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color: #ff271b;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: 0;
-}
 
 /* ********************************
         SECTION FOOTER
 ******************************** */
 
-footer {font-size: 1.1em; padding: 5px 0; text-align: center;
-/*     background-attachment: scroll;
-background-image: url(../img/archesbeige.png);
-background-position: center center;
--webkit-background-size: cover;
--moz-background-size: cover;
-background-size: cover;
--o-background-size: cover; */
-    }
+footer {font-size: 1.1em; padding: 5px 0; text-align: center;}
+@media(max-width: 991px){footer {font-size: 0.9em; padding: 5px 0; text-align: center;}}
+
 
 /* ********************************
             TITRES
 ******************************** */
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    font-family: "Playfair Display",Helvetica,Arial,sans-serif; }
 
-p.soustitre {
-    font-size: 1.2em;
-    font-style: italic;}
+h1, h2, h3, h4, h5, h6 {text-transform: uppercase;font-family: "Playfair Display",Helvetica,Arial,sans-serif; }
 
+p.soustitre {font-size: 1.2em;font-style: italic;}
 
-h2.section-heading {
-    margin-top: 1em;
-    font-size: 2.5em;
-}
-
-@media(max-width: 479px){
-    h2.section-heading {
-    font-size: 1.8em; margin-top: 3em;}
-    p.soustitre {
-    font-size: 1em;}
-
-}
-
-@media(min-width: 480px) {
-    h2.section-heading {
-    font-size: 2em;
-}
-    p.soustitre {
-        font-size: 1em;
-        font-style: italic;}}
-
-@media(min-width: 992px) {
-    p.soustitre {
-        font-size: 1.1em;
-        font-style: italic;}}
+h2.section-heading {margin-top: 1em;font-size: 2.5em;}
+@media(max-width: 479px){h2.section-heading {font-size: 1.8em;}p.soustitre {font-size: 1em;}}
+@media(min-width: 480px) {h2.section-heading {font-size: 2em;}p.soustitre {font-size: 1em;font-style: italic;}}
+@media(min-width: 992px) {p.soustitre {font-size: 1.1em;font-style: italic;}}
 
 hr.soush2 {width: 8em; color: #080e30; margin-top: 1.5em; margin-bottom: 3em;}
 
+section h2.bjr { margin-top: 1em;font-size: 2.5em;}
 
-section h2.bjr {
-    margin-top: 1em;
-    font-size: 2.5em;
-}
+section h3.service-heading {font-size: 1.5em; margin-top: 0.5em; margin-bottom: 1.5em;}
 
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-}
-
-section h4.service-heading {
-    font-size: 1.5em;
-    margin-top: 0.5em;
-
-}
-h4.service-heading {
-    margin: 0 0 1.5em 0;
-}
 
 /* ********************************
             AUTRES
 ******************************** */
+
 strong {color:#ff271b; font-weight: 400;}
 
 a {color: #ff271b;}
 
-a:hover, a:focus, a:active, a.active {
-    color: #ff271b;   
-    text-decoration: none;}
+a:hover, a:focus, a:active, a.active {color: #ff271b; text-decoration: none;}
 
+ul{list-style-type:none;}
+
+.btn:focus,.btn:active,.btn.active,.btn:active:focus {outline: 0;}
 
 ::-moz-selection {text-shadow: none;background: #ff271b;}
 
@@ -553,17 +356,17 @@ body {webkit-tap-highlight-color: #ff271b;}
 
 
 
-
 /* ********************************
             IMAGES
 ******************************** */
-.img-centered {margin: 0 auto;}
 
+.img-centered {margin: 0 auto;}
 
 
 /* ********************************
             BOUTONS
 ******************************** */
+
 /* Boutons dans Modal à modifier */
 .btn-primary {
     border-color: #ff271b;
@@ -612,6 +415,7 @@ fieldset[disabled] .btn-primary.active {
 } */
 /* Fin boutons Modal */
 
+
 /* Bouton beige Contact*/
 .btn-xl {
     padding: 20px 40px;
@@ -653,112 +457,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .btn-xl .badge {color: #ff271b; background-color: #fff;}
-
-/* Bouton orange Services */
-.btnperso {
-    margin-top: 3em;
-    padding: 1.25em 2.5em;
-    border: 0.15em;
-    border-style: dotted;
-    border-color: #ff271b;
-    border-radius: 3px;
-    box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
-    font-family: "Playfair Display",Helvetica,Arial,sans-serif;
-    font-size: 1.1em;
-    font-weight: 700;
-    color: #ff271b;
-    background-color: transparent;}
-
-.btnperso:hover, .btnperso2:hover, .btnperso:focus, .btnperso2:focus,
-.btnperso:active, .btnperso2:active, .btnperso.active,
-.open .dropdown-toggle.btnperso {
-    border-color: #fffdf1;
-    color: #fffdf1;
-    background-color: #ff271b}
-
-
-
-
-
-
-
-
-
-@media(max-width:767px) {
-    section {padding: 50px 0;}
-}
-
-@media(min-width:768px) {
-    section {padding: 100px 0;}
-}
-
-
-
-
-#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 4em;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 1;
-
-
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 1.25em;
-    margin-top: -0.75em;
-    text-align: center;
-    font-size: 1.75em;
-    color: #fffdf1;
-
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    margin-top: -0.15em;
-    width: 15%;
-
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-    margin: 0;
-}
-
-
-
-#portfolio * {
-    z-index: 2;
-}
-
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
-
-
 
 
 /* ********************************
@@ -851,9 +549,9 @@ fieldset[disabled] .btn-xl.active {
             HEXAGONES
 ******************************** */
 
-.clear  { clear: both; }
-.templatemorow1, .templatemorow2  { margin: 0 0 15% 0;}
-.hex    { width: 20%; float: left;}
+.clear { clear: both; }
+.templatemorow1, .templatemorow2 { margin: 0 0 15% 0;}
+.hex { width: 20%; float: left;}
 
 
 
@@ -979,7 +677,6 @@ fieldset[disabled] .btn-xl.active {
 .hexagon {
     overflow: hidden;
     visibility: hidden;
-
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -992,7 +689,6 @@ fieldset[disabled] .btn-xl.active {
     overflow: hidden;
     width: 100%;
     height: 100%;
-
     -webkit-transform: rotate(-60deg);
     -moz-transform: rotate(-60deg);
     -o-transform: rotate(-60deg);
@@ -1006,7 +702,6 @@ fieldset[disabled] .btn-xl.active {
     height: 100%;
     background-repeat: no-repeat;
     background-position: 50%;
-
     -webkit-background-size: 125%;
     -moz-background-size: 125%;
     background-size: 125%;
@@ -1067,7 +762,6 @@ fieldset[disabled] .btn-xl.active {
   left: 50%;
   margin-top: -16px;
   margin-left: -16px;
-
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -o-transform: rotate(30deg);
@@ -1079,7 +773,8 @@ fieldset[disabled] .btn-xl.active {
 /*------------------------------------------------------
         Hexagone Qui suis-je Styles 
 --------------------------------------------------------*/
-.rose {margin-top: 2em; margin-bottom: 5em;}
+
+.rose {margin-top: 2em; margin-bottom: 3em;}
 #myHeader2, #myHeader5 {margin-right: 70px;}
 .lignesup {margin: -65px 0 0 0;}
 .texteabout {margin-top: 12em; font-size: 1.2em;}
