@@ -69,7 +69,7 @@ body {
 .navbar .navbar-collapse {text-align: center; }
 .navbar-default .navbar-collapse {border-color: rgba(255,255,255,.02);}
 
-@media(max-width:768px){
+@media(max-width:767px){
     .navbar-collapse {
         background-image: url(../img/archesbeige.png);
         background-size: 175%;}}
@@ -171,10 +171,12 @@ header {
     text-align: center;
 }
 
-/* header .intro-text {
+.landing {height: 100%;}
+
+header .intro-text {
     padding-top: 100px;
     padding-bottom: 100px;
-} */
+}
 
 header .intro-text .intro-lead-in {
     font-family: "Great Vibes",Times,serif;
@@ -191,7 +193,9 @@ header .intro-text .intro-heading {
     line-height: auto;
     text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
 
-@media(max-width:479px) {
+header .fa {margin-top: 6em; font-size: 3em;}
+
+@media(max-width:359px) {
     header .intro-text .intro-lead-in {
         margin-top: 1.5em;
         font-size: 3em;
@@ -201,8 +205,26 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-top: -0.5em;
         margin-bottom: -1em;
-        font-size: 1.9em;
+        font-size: 2.3em;
         line-height: auto;}
+
+    header .fa {margin-top: 5em; font-size: 3em;}
+}
+
+@media(min-width:360px) and (max-width: 479px){
+    header .intro-text .intro-lead-in {
+        margin-top: 1.5em;
+        font-size: 3.7em;
+        font-style: normal;
+        line-height: auto;}
+
+    header .intro-text .intro-heading {
+        margin-top: -0.5em;
+        margin-bottom: -1em;
+        font-size: 2.5em;
+        line-height: auto;}
+
+    header .fa {margin-top: 6em; font-size: 3em;}
 }
 
 @media(min-width:480px) {
@@ -211,12 +233,27 @@ header .intro-text .intro-heading {
         padding-bottom: 4em;}
 
     header .intro-text .intro-lead-in {
-        font-size: 5.5em;}
+        font-size: 4.8em;}
+
+    header .intro-text .intro-heading {
+        font-size: 2.5em;}
+
+    header .fa {margin-top: 3em; font-size: 3em;}
+}
+
+@media(min-width:600px) {
+    header .intro-text {
+        padding-top: 16em;
+        padding-bottom: 4em;}
+
+    header .intro-text .intro-lead-in {
+        font-size: 6em;}
 
     header .intro-text .intro-heading {
         font-size: 3em;}
-}
 
+    header .fa {margin-top: 5.5em; font-size: 3em;}
+}
 
 @media(min-width:768px) {
     header .intro-text {
@@ -237,9 +274,11 @@ header .intro-text .intro-heading {
         font-size: 3.5em;
         line-height: auto;
         text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
+
+    header .fa {margin-top: 4em; font-size: 3em; margin-bottom: 1em;}
 }
 
-header .fa {margin-top: 4em; font-size: 3em;}
+
 
 /* ********************************
         SECTION INTRODUCTION
@@ -292,29 +331,22 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
     color: #ff271b;
     background-color: transparent;}
 
-.txtpf {margin-top: 7em;}
 
-@media(max-width:479px){ /* en dessous de 479 px */
+@media(max-width:767px){ 
     .btnperso2 {margin-top: 1em;}
-    .txtpf {margin-top: 7em; font-size: 1.1em;}}
+    .txtpf {margin-top: 4em; font-size: 1.1em;}}
 
-@media (min-width: 650px) and (max-width: 767px){
-    .btnperso2 {margin-top: 1em;}
-    .txtpf {margin-top: 7.5em;}}
-
-@media(min-width:768px){ /* au dessus de 768 px */
+@media(min-width:768px){ 
     .btnperso2 {margin-top: 1em;}
     .txtpf {margin-top: 6em;}}
 
-@media(min-width:992px){ /* au dessus de 992 px */
+@media(min-width:992px){ /
     .btnperso2 {margin-top: 0.5em;}
     .txtpf {margin-top: 1em;}}
 
-@media(min-width:1200px){ /* au dessus de 1200 px */
-    .btnperso2 {margin-top: 1em;}
-    .txtpf {margin-top: -2em;}}
-
-
+@media(min-width:1300px){ 
+    .btnperso2 {margin-top: 0.5em;}
+    .txtpf {margin-top: 3em;}}
 
 /* ********************************
         SECTION CONTACT
@@ -322,10 +354,12 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 p.contact {font-size: 1.4em; line-height: 1.75;}
 @media(max-width: 480px) {p.contact {font-size: 1.2em;}.list-inline>li {padding:0 0 0 0;}}
 
+hr.soush2contact {width: 10%; color:#fffdf1; margin-top: 1.5em; margin-bottom: 3em;}
+
 section#contact {
     background-image: url(../img/archesbleues.png);
     background-position: center;
-    background-repeat: repeat-x;
+    background-repeat: repeat repeat;
     color: #fffdf1;
 }
 
@@ -421,7 +455,15 @@ ul.social-buttons li a:active {
         SECTION FOOTER
 ******************************** */
 
-footer {font-size: 1.1em; padding: 5px 0; text-align: center;}
+footer {font-size: 1.1em; padding: 5px 0; text-align: center;
+/*     background-attachment: scroll;
+background-image: url(../img/archesbeige.png);
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover; */
+    }
 
 /* ********************************
             TITRES
@@ -436,13 +478,13 @@ p.soustitre {
 
 
 h2.section-heading {
-    margin-top: -1em;
+    margin-top: 1em;
     font-size: 2.5em;
 }
 
 @media(max-width: 479px){
     h2.section-heading {
-    font-size: 1.8em;}
+    font-size: 1.8em; margin-top: 3em;}
     p.soustitre {
     font-size: 1em;}
 
@@ -642,12 +684,12 @@ fieldset[disabled] .btn-xl.active {
 
 
 
-
-
-section {padding: 100px 0;}
+@media(max-width:767px) {
+    section {padding: 50px 0;}
+}
 
 @media(min-width:768px) {
-    section {padding: 150px 0;}
+    section {padding: 100px 0;}
 }
 
 
@@ -810,18 +852,18 @@ section {padding: 100px 0;}
 ******************************** */
 
 .clear  { clear: both; }
-.templatemorow1, .templatemorow2  { margin: 0 0 20% 0;}
+.templatemorow1, .templatemorow2  { margin: 0 0 15% 0;}
 .hex    { width: 20%; float: left;}
 
 
 
-@media(max-width:399px) { /* au dessous de 400 px */
-    .templatemorow1  { margin: 0 0 85% 0;}
+@media(max-width:359px) {
+    .templatemorow1  { margin: 0 0 70% 0;}
     .templatemorow2  { margin: 0 0 60% 0;}
-    .hex-offset1 { margin-left: 5%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 41%; margin-top: 34%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 5%; margin-top: -18%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 41%; margin-top: 16%;} /* espacement hexa2 ligne 2 */
+    .hex-offset1 { margin-left: 0%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 41%; margin-top: 24%; } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 0%; margin-top: -22%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 41%; margin-top: 2%;} /* espacement hexa2 ligne 2 */
     .hexagon2 {
     position: absolute;
     width: 140px;
@@ -830,13 +872,13 @@ section {padding: 100px 0;}
 }
 }
 
-@media(min-width:400px) and (max-width: 479px) {
+@media(min-width:360px) and (max-width: 479px) {
     .templatemorow1  { margin: 0 0 75% 0;}
-    .templatemorow2  { margin: 0 0 60% 0;}
-    .hex-offset1 { margin-left: 10%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 44%; margin-top: 30%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 10%; margin-top: -15%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 44%; margin-top: 16%;} /* espacement hexa2 ligne 2 */
+    .templatemorow2  { margin: 0 0 50% 0;}
+    .hex-offset1 { margin-left: 1%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 41%; margin-top: 25%; } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 1%; margin-top: -25%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 41%; margin-top: 0%;} /* espacement hexa2 ligne 2 */
     .hexagon2 {
     position: absolute;
     width: 160px;
@@ -845,13 +887,13 @@ section {padding: 100px 0;}
 }
 }
 
-@media (min-width: 480px) and (max-width: 649px) {
-    .templatemorow1  { margin: 0 0 70% 0;}
-    .templatemorow2  { margin: 0 0 60% 0;}
-    .hex-offset1 { margin-left: 16%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 45%; margin-top: 30%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 16%; margin-top: -10%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 45%; margin-top: 20%;} /* espacement hexa2 ligne 2 */
+@media (min-width: 480px) {
+    .templatemorow1  { margin: 0 0 55% 0;}
+    .templatemorow2  { margin: 0 0 55% 0;}
+    .hex-offset1 { margin-left: 11%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 44%; margin-top: 23%; } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 11%; margin-top: -10%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 44%; margin-top: 13%;} /* espacement hexa2 ligne 2 */
     .hexagon2 {
     position: absolute;
     width: 180px;
@@ -860,8 +902,8 @@ section {padding: 100px 0;}
 }
 }
 
-@media (min-width: 650px) and (max-width: 767px) {
-    .templatemorow1  { margin: 0 0 50% 0;}
+@media (min-width: 600px) {
+    .templatemorow1  { margin: 0 0 47% 0;}
     .templatemorow2  { margin: 0 0 45% 0;}
     .hexagon2 {
     position: absolute;
@@ -870,49 +912,68 @@ section {padding: 100px 0;}
     top: -85px;
     }
     .hex-offset1 { margin-left: 20%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 46%; margin-top: 23%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 20%; margin-top: -5%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 46%; margin-top: 18%;} /* espacement hexa2 ligne 2 */
+    .hex-offset2 { margin-left: 46%; margin-top: 19%; } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 20%; margin-top: -9%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 46%; margin-top: 10%;} /* espacement hexa2 ligne 2 */
 
 }
 
-@media(min-width:768px){ /* au dessus de 768 px */
+@media(min-width:700px){
+    .templatemorow1  { margin: 0 0 40% 0;}
+    .templatemorow2  { margin: 0 0 37% 0;}
     .hexagon2 {
     position: absolute;
     width: 180px;
     height: 390px;
     top: -85px;
     }
-    .hex-offset1 { margin-left: 1%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 24%;  margin-top: -8.5%} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 70%; margin-top: -8.5%} /* espacement hexa2 ligne 2 */
+    .hex-offset1 { margin-left: 24%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 46%; margin-top: 16%; } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 24%; margin-top: -8%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 46%; margin-top: 8%;} /* espacement hexa2 ligne 2 */
 }
 
-@media(min-width:992px){ /* au dessus de 992 px */
+@media(min-width:768px){
+    .templatemorow1  { margin: 0 0 25% 0;}
+    .templatemorow2  { margin: 0 0 20% 0;}
     .hexagon2 {
     position: absolute;
-    width: 200px;
-    height: 400px;
+    width: 180px;
+    height: 390px;
     top: -85px;
     } 
-    .hex-offset1 { margin-left: 9%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 28%;  margin-top: -10%} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 66%; margin-top: -10%} /* espacement hexa2 ligne 2 */
+    .hex-offset1 { margin-left: 5%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 45%; margin-top: 0% } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 25%;  margin-top: -10%} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 65%; margin-top: -10%} /* espacement hexa2 ligne 2 */
 }
 
-@media(min-width:1200px){ /* au dessus de 1200 px */
+@media(min-width:992px){ 
+    .hexagon2 {
+    position: absolute;
+    width: 190px;
+    height: 395px;
+    top: -85px;
+    } 
+    .hex-offset1 { margin-left: 13%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 30%;  margin-top: -13%} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 64%; margin-top: -13%} /* espacement hexa2 ligne 2 */
+}
+
+@media(min-width:1200px){
+    .templatemorow1  { margin: 0 0 16% 0;}
+    .templatemorow2  { margin: 0 0 15% 0;}
     .hexagon2 {
     position: absolute;
     width: 200px;
     height: 400px;
     top: -85px;
     }
-    .hex-offset1 { margin-left: 17%;  margin-top: 0%} /* espacement hexa1 ligne 1*/
-    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1*/
-    .hex-offset3 { margin-left: 32%;  margin-top: -10%} /* espacement hexa1 ligne 2*/
-    .hex-offset4 { margin-left: 62%; margin-top: -10%} /* espacement hexa2 ligne 2*/
+    .hex-offset1 { margin-left: 19%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 33%;  margin-top: -5%} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 61%; margin-top: -5%} /* espacement hexa2 ligne 2 */
 }
 
 .hexagon {
@@ -940,8 +1001,6 @@ section {padding: 100px 0;}
 }
 
 .hexagon-in2 {
-    /*-webkit-box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);
-    box-shadow: inset 0 0 0 200px rgba(176, 218, 212, 0.48);*/
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -967,8 +1026,8 @@ section {padding: 100px 0;}
 }
 
 .hexagon-in2:hover {
-    webkit-box-shadow: inset 0 0 0 200px rgba(0,0,0, 0.7);
-    box-shadow: inset 0 0 0 200px rgba(0,0,0, 0.7);
+    webkit-box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.5);
+    box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.5);
 }
 
 
@@ -992,7 +1051,7 @@ section {padding: 100px 0;}
   transition: all 50ms ease-in-out;
 }
 
-.gallery-item .overlay a {
+.gallery-item .overlay a{
   color: #fffdf1;
   width: 32px;
   height: 32px;
@@ -1017,13 +1076,10 @@ section {padding: 100px 0;}
 }
 
 
-.templatemo_overlaytxt  { margin-top: 105%; text-align: center; width: 100%; }
-
-
 /*------------------------------------------------------
         Hexagone Qui suis-je Styles 
 --------------------------------------------------------*/
-.rose {margin-top: 2em; margin-bottom: 0.8em;}
+.rose {margin-top: 2em; margin-bottom: 5em;}
 #myHeader2, #myHeader5 {margin-right: 70px;}
 .lignesup {margin: -65px 0 0 0;}
 .texteabout {margin-top: 12em; font-size: 1.2em;}
