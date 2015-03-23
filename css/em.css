@@ -337,6 +337,8 @@ section h3.service-heading {font-size: 1.5em; margin-top: 0.5em; margin-bottom: 
 strong {color:#ff271b; font-weight: 400;}
 
 a {color: #ff271b;}
+a.underline {color: #080e30; border-bottom: 1.5px dotted #ff271b}
+a.underline:hover, a.underline:focus, a.underline:active {color: #ff271b; border-bottom: 1.5px dotted #080e30}
 
 a:hover, a:focus, a:active, a.active {color: #ff271b; text-decoration: none;}
 
@@ -490,8 +492,8 @@ fieldset[disabled] .btn-xl.active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Playfair Display","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+    font-size: 1.1em;
     font-style: italic;
 }
 
