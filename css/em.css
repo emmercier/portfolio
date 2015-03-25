@@ -60,7 +60,7 @@ body {
 .navbar-default .navbar-collapse {border-color: rgba(255,255,255,.02);}
 
 /* Nav réduite */
-@media(max-width:767px){.navbar-collapse {background-image: url(../img/archesbeige.png); background-size: 175%;}}
+@media(max-width:767px){.navbar-collapse {background-image: url(../img/archesbleues.png);}}
 
 .navbar-default .navbar-toggle {
     border-color: #ff271b;
@@ -80,7 +80,8 @@ body {
 
 
 @media(max-width:767px) {
-.navbar-default.navbar-shrink .nav li a {color: #080e30;}
+.navbar-default .nav li a {outline: 0; color: #fffdf1;}
+.navbar-default.navbar-shrink .nav li a {color: #fffdf1;}
 .navbar-default .navbar-nav>.active>a { background-color: transparent; color: #ff271b; padding-bottom: 0.5em;}}
 
 
@@ -130,61 +131,59 @@ p {font-size: 1.1em; line-height: 1.75;}
         SECTION HEADER
 ******************************** */
 
-header {color: #080e30; text-align: center;}
+#page-top {color: #080e30; text-align: center;}
 
-header .intro-text {padding-top: 100px; padding-bottom: 100px;}
+.intro-text {padding-top: 100px; padding-bottom: 100px;}
 
-header .intro-text .intro-lead-in {
+ .intro-text .intro-lead-in {
     font-family: "Great Vibes",Times,serif;
-   /*  font-size: 4.5em; */
     font-style: normal;
     line-height: auto;
     text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
 
-header .intro-text .intro-heading {
+ .intro-text .intro-heading {
     margin-top: -0.5em;
     margin-bottom: 2em;
     font-family: "Great Vibes",Times,serif;
-/*     font-size: 2.5em; */
     line-height: auto;
     text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
 
-header .fa {margin-top: 6em; font-size: 3em;}
+#page-top .fa {margin-top: 6em; font-size: 3em;}
 
 @media(max-width:359px) {
-    header .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3em;}
-    header .intro-text .intro-heading {font-size: 2.3em;}
-    header .fa {margin-top: 3em;}
+    .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3em;}
+     .intro-text .intro-heading {font-size: 2.3em;}
+     .fa {margin-top: 3em;}
 }
 
 @media(min-width:360px) and (max-width: 479px){
-    header .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3.7em;}
-    header .intro-text .intro-heading {margin-bottom: -1em; font-size: 2.5em;}
-    header .fa {margin-top: 7em;}
+     .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3.7em;}
+     .intro-text .intro-heading {margin-bottom: -1em; font-size: 2.5em;}
+     #page-top .fa {margin-top: 7em;}
 }
 
 @media(min-width:480px) {
-    header .intro-text {padding-top: 16em;padding-bottom: 4em;}
-    header .intro-text .intro-lead-in {font-size: 4.8em;}
-    header .intro-text .intro-heading {font-size: 2.5em;}
-    header .fa {margin-top: 3em;}
+     .intro-text {padding-top: 16em;padding-bottom: 4em;}
+     .intro-text .intro-lead-in {font-size: 4.8em;}
+     .intro-text .intro-heading {font-size: 2.5em;}
+     #page-top .fa {margin-top: 3em;}
 }
 
 @media(min-width:600px) {
-    header .intro-text {padding-top: 16em;padding-bottom: 4em;}
-    header .intro-text .intro-lead-in {font-size: 6em;}
-    header .intro-text .intro-heading {font-size: 3em;}
-    header .fa {margin-top: 5.5em;}
+     .intro-text {padding-top: 16em;padding-bottom: 4em;}
+     .intro-text .intro-lead-in {font-size: 6em;}
+     .intro-text .intro-heading {font-size: 3em;}
+     #page-top .fa {margin-top: 5.5em;}
 }
 
 @media(min-width:768px) {
-    header .intro-text {padding-top: 16em;padding-bottom: 3em;}
-    header .intro-text .intro-lead-in {font-size: 7em;}
-    header .intro-text .intro-heading {font-size: 3.5em;}
-    header .fa {margin-top: 4em; font-size: 3em;}
+     .intro-text {padding-top: 16em;padding-bottom: 3em;}
+     .intro-text .intro-lead-in {font-size: 7em;}
+     .intro-text .intro-heading {font-size: 3.5em;}
+     #page-top .fa {margin-top: 4em; font-size: 3em;}
 }
 
-@media(min-width:1200px) {header .fa {margin-top: 7em; font-size: 3em;}}
+@media(min-width:1200px) {#page-top .fa {margin-top: 3em; font-size: 3em;}}
 
 
 /* ********************************
@@ -214,7 +213,7 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 /* Bouton orange Services */
 .btnperso {
     margin-top: 3em;
-    padding: 1.25em 2.5em;
+    padding: 1em 2em;
     border: 0.15em;
     border-style: dotted;
     border-color: #ff271b;
@@ -245,7 +244,7 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 /* Bouton orange Portfolio */
 .btnperso2 {
     margin-top: 1em;
-    padding: 1.25em 2.5em;
+    padding: 1em 2em;
     border: 0.15em;
     border-style: dotted;
     border-color: #ff271b;
@@ -341,6 +340,8 @@ a.underline {color: #080e30; border-bottom: 1.5px dotted #ff271b}
 a.underline:hover, a.underline:focus, a.underline:active {color: #ff271b; border-bottom: 1.5px dotted #080e30}
 
 a:hover, a:focus, a:active, a.active {color: #ff271b; text-decoration: none;}
+
+/* a.social:hover, a.social:focus {background-image: url(../img/contact/twittero.png);} */
 
 ul{list-style-type:none;}
 
@@ -830,4 +831,5 @@ fieldset[disabled] .btn-xl.active {
    .texteabout {margin-top: 13.5em; font-size: 1.1em;} 
    .about{width: 27%;}
    .lignesup {margin: -63px 0 0 0;}
+   .rose {margin-bottom: 5.1em;}
 }
