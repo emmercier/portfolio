@@ -128,7 +128,7 @@ p {font-size: 1.1em; line-height: 1.75;}
 
 
 /* ********************************
-        SECTION HEADER
+        SECTION Page-top
 ******************************** */
 
 #page-top {color: #080e30; text-align: center;}
@@ -202,6 +202,8 @@ p.intro {margin-top:3em; font-size: 1.25em; font-style: italic;}
 
 hr.bjr{width: 8em; color: #fffdf1; margin-top: 1.5em;}
 
+a.lienbis:hover, a.lienbis:focus {color: #ff271b; border-bottom: 0.1em dotted #fffdf1}
+
 
 /* ********************************
         SECTION SERVICE
@@ -216,19 +218,17 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
     padding: 1em 2em;
     border: 0.15em;
     border-style: dotted;
-    border-color: #ff271b;
+    border-color: #fffdf1;
     border-radius: 3px;
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
     font-family: "Playfair Display",Helvetica,Arial,sans-serif;
     font-size: 1.1em;
-    font-weight: 700;
-    color: #ff271b;
+    font-style: italic;
+    color: #fffdf1;
     background-color: transparent;}
 
-.btnperso:hover, .btnperso2:hover, .btnperso:focus, .btnperso2:focus,
-.btnperso:active, .btnperso2:active, .btnperso.active,
-.open .dropdown-toggle.btnperso {
-    border-color: #fffdf1; color: #fffdf1; background-color: #ff271b}
+.btnperso:hover, .btnperso:focus, .btnperso:active, .btnperso.active, .open .dropdown-toggle.btnperso {
+        border-color: #ff271b; color: #ff271b;}
 
 
 /* ********************************
@@ -236,7 +236,7 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 ******************************** */
 
 #portfolio .portfolio-item {right: 0; margin: 0 0 4em;}
-#portfolio .portfolio-item .portfolio-link {display: block; position: relative; margin: 0 auto; max-width: 400px;}
+#portfolio .portfolio-item .portfolio-link {display: block; position: absolute; margin: auto; max-width: 400px;}
 #portfolio * {z-index: 2;}
 
 @media(min-width:767px) {#portfolio .portfolio-item {margin: 0 0 30px;}}
@@ -252,15 +252,16 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
     font-family: "Playfair Display",Helvetica,Arial,sans-serif;
     font-size: 1.1em;
-    font-weight: 700;
     color: #ff271b;
     background-color: transparent;}
 
+.btnperso2:hover, .btnperso2:focus, .btnperso2:active, .open .dropdown-toggle.btnperso2 {
+    border-color: #080e30; color: #080e30;}
 
 @media(max-width:767px){.btnperso2 {margin-top: 1em;}.txtpf {margin-top: 4em;}}
 @media(min-width:768px){.btnperso2 {margin-top: 1em;}.txtpf {margin-top: 6em;}}
 @media(min-width:992px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 1em;}}
-@media(min-width:1300px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 3em;}}
+@media(min-width:1200px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 5em;}}
 
 /* ********************************
         SECTION CONTACT
@@ -724,8 +725,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .hexagon-in2:hover {
-    webkit-box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.5);
-    box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.5);
+    webkit-box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.85);
+    box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.85);
 }
 
 
@@ -749,22 +750,15 @@ fieldset[disabled] .btn-xl.active {
   transition: all 50ms ease-in-out;
 }
 
-.gallery-item .overlay a{
-  color: #fffdf1;
-  width: 32px;
-  height: 32px;
-  background-color: #ff271b;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
-  line-height: 32px;
+.gallery-item .overlay div{
+  color: #080e30;
+  font-size: 1em;
+  text-transform: uppercase;
+/*   text-align: center; */
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-top: -16px;
-  margin-left: -16px;
+    margin-top: -10%;
+  margin-left:7%;
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -o-transform: rotate(30deg);
@@ -772,6 +766,12 @@ fieldset[disabled] .btn-xl.active {
     transform: rotate(30deg);
 }
 
+
+.client {
+    font-style: italic;
+    text-transform: none;
+    width: 4em;
+}
 
 /*------------------------------------------------------
         Hexagone Qui suis-je Styles 
