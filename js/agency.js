@@ -10,7 +10,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 3000, 'easeOutExpo'); //avant modif : 1500, et easeInOutExpo
+        }, 1500, 'easeOutCirc'); //avant modif : 1500, et easeInOutExpo
         event.preventDefault();
     });
 });

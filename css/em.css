@@ -74,7 +74,18 @@ body {
     background-color: #ff271b;}
 
 
-.navbar-default.navbar-shrink .nav li a {color: #fffdf1;}
+
+
+/* .navbar-default .navbar-nav>li>a{color:#080e30} */
+.navbar li>a.navaccueil{
+    color:#080e30;
+}
+
+/* .navbar-default.navbar-shrink */
+.navbar-shrink li>a.navaccueil{
+    color:#fffdf1;
+}
+
 
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {outline: 0; color: #ff271b;}
 
@@ -86,7 +97,7 @@ body {
 
 
 @media(min-width:768px) {
-.navbar-default .navbar-nav>.active>a { color: #fffdf1; background-color: transparent; padding-bottom: 0.5em;}}
+.navbar-default .navbar-nav>.active>a { color: #ff271b; background-color: transparent; padding-bottom: 0.5em;}}
 
 .navbar-default .navbar-nav>.active>a.logoem,
 .navbar-default .navbar-nav>.active>a.logoem:hover {
@@ -117,6 +128,11 @@ body {
         background-image: url(../img/em.png);
         background-position: center;
         background-repeat: no-repeat;}
+
+/*     .navbar-default .navbar-shrink>.active>a {color: #fffdf1;} */
+    .navbar-default .navbar-shrink a.navaccueil{
+    color:#fffdf1;
+}
 }
 
 
@@ -202,7 +218,7 @@ p.intro {margin-top:3em; font-size: 1.25em; font-style: italic;}
 
 hr.bjr{width: 8em; color: #fffdf1; margin-top: 1.5em;}
 
-a.lienbis:hover, a.lienbis:focus {color: #ff271b; border-bottom: 0.1em dotted #fffdf1}
+a.lienbis:hover, a.lienbis:focus {color: #ff271b; border-bottom: 0.1em dotted #fffdf1; }
 
 
 /* ********************************
@@ -235,7 +251,7 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
         SECTION PORTFOLIO
 ******************************** */
 
-#portfolio .portfolio-item {right: 0; margin: 0 0 4em;}
+#portfolio .portfolio-item {right: 0; margin: 0 0 4em 0;}
 #portfolio .portfolio-item .portfolio-link {display: block; position: absolute; margin: auto; max-width: 400px;}
 #portfolio * {z-index: 2;}
 
@@ -258,10 +274,10 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 .btnperso2:hover, .btnperso2:focus, .btnperso2:active, .open .dropdown-toggle.btnperso2 {
     border-color: #080e30; color: #080e30;}
 
-@media(max-width:767px){.btnperso2 {margin-top: 1em;}.txtpf {margin-top: 4em;}}
-@media(min-width:768px){.btnperso2 {margin-top: 1em;}.txtpf {margin-top: 6em;}}
-@media(min-width:992px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 1em;}}
-@media(min-width:1200px){.btnperso2 {margin-top: 0.5em;}.txtpf {margin-top: 5em;}}
+@media(max-width:767px){.btnperso2 {margin-top: 5em;}}
+@media(min-width:768px){.btnperso2 {margin-top: 6em;}}
+@media(min-width:992px){.btnperso2 {margin-top: 1.5em;}}
+@media(min-width:1200px){.btnperso2 {margin-top: 5.5em;}}
 
 /* ********************************
         SECTION CONTACT
@@ -338,11 +354,15 @@ strong {color:#ff271b; font-weight: 400;}
 
 a {color: #ff271b;}
 a.underline {color: #080e30; border-bottom: 1.5px dotted #ff271b}
-a.underline:hover, a.underline:focus, a.underline:active {color: #ff271b; border-bottom: 1.5px dotted #080e30}
+a.underline:hover, a.underline:focus, a.underline:active {color: #ff271b; border-bottom: 1.5px dotted #080e30; -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;}
 
 a:hover, a:focus, a:active, a.active {color: #ff271b; text-decoration: none;}
 
-/* a.social:hover, a.social:focus {background-image: url(../img/contact/twittero.png);} */
+a.social:hover, a.social:focus {opacity: 0.7;}
 
 ul{list-style-type:none;}
 
@@ -668,14 +688,14 @@ fieldset[disabled] .btn-xl.active {
     .templatemorow2  { margin: 0 0 15% 0;}
     .hexagon2 {
     position: absolute;
-    width: 200px;
-    height: 400px;
+    width: 220px;
+    height: 440px;
     top: -85px;
     }
-    .hex-offset1 { margin-left: 19%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 33%;  margin-top: -5%} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 61%; margin-top: -5%} /* espacement hexa2 ligne 2 */
+    .hex-offset1 { margin-left: 16%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
+    .hex-offset2 { margin-left: 48%; margin-top: 0% } /* espacement hexa2 ligne 1 */
+    .hex-offset3 { margin-left: 32%;  margin-top: -5%} /* espacement hexa1 ligne 2 */
+    .hex-offset4 { margin-left: 64%; margin-top: -5%} /* espacement hexa2 ligne 2 */
 }
 
 .hexagon {
@@ -725,8 +745,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .hexagon-in2:hover {
-    webkit-box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.85);
-    box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.85);
+    webkit-box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.75);
+    box-shadow: inset 0 0 0 200px rgba(255,253,241, 0.75);
 }
 
 
@@ -754,16 +774,19 @@ fieldset[disabled] .btn-xl.active {
   color: #080e30;
   font-size: 1em;
   text-transform: uppercase;
-/*   text-align: center; */
   position: absolute;
-  top: 50%;
-    margin-top: -10%;
-  margin-left:7%;
+    top: 50%;
+/*   margin-top: -10%;
+margin-left:0.9em; */
+display: inline-block;
+width: 100%;
+text-align: center;
+left:0;
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
-    transform: rotate(30deg);
+    transform: rotate(30deg) translate(-17px,-10px);
 }
 
 
