@@ -116,9 +116,9 @@ body {
         padding: 25px 0;
         border: 0;
         background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;}
+        -webkit-transition: padding .2s ease-out;
+        -moz-transition: padding .2s ease-out;
+        transition: padding .2s ease-out;}
 
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;}
@@ -284,6 +284,7 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 ******************************** */
 
 p.contact {font-size: 1.25em;}
+p.dispo {font-size: 1.5em; font-style: italic; margin-bottom: 1.5em;}
 @media(max-width: 600px) {p.contact {font-size: 1.1em;}.list-inline>li {margin-right:-0.8em;}}
 
 hr.soush2contact {width: 8em; color:#fffdf1; margin-top: 1.5em; margin-bottom: 3em;}
@@ -771,21 +772,19 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .gallery-item .overlay div{
-  color: #080e30;
-  font-size: 1em;
-  text-transform: uppercase;
-  position: absolute;
+    color: #080e30;
+    font-size: 1em;
+    text-transform: uppercase;
+    position: absolute;
     top: 50%;
-/*   margin-top: -10%;
-margin-left:0.9em; */
-display: inline-block;
-width: 100%;
-text-align: center;
-left:0;
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    left:0;
+    -webkit-transform: rotate(30deg) translate(-17px,-10px);
+    -moz-transform: rotate(30deg) translate(-17px,-10px);
+    -o-transform: rotate(30deg) translate(-17px,-10px);
+    -ms-transform: rotate(30deg) translate(-17px,-10px);
     transform: rotate(30deg) translate(-17px,-10px);
 }
 
@@ -851,7 +850,7 @@ left:0;
 }
 @media(min-width: 1200px){
     #myHeader2, #myHeader5 {margin-right: 70px; padding-top: 10px;}
-   .texteabout {margin-top: 13.5em; font-size: 1.1em;} 
+   .texteabout {margin-top: 13.5em; font-size: 1.2em;} 
    .about{width: 27%;}
    .lignesup {margin: -63px 0 0 0;}
    .rose {margin-bottom: 5.1em;}
