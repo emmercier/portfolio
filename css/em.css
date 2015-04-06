@@ -274,7 +274,7 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 .btnperso2:hover, .btnperso2:focus, .btnperso2:active, .open .dropdown-toggle.btnperso2 {
     border-color: #fffdf1; color: #fffdf1; background-color: #ff271b;}
 
-@media(max-width:767px){.btnperso2 {margin-top: 5em;}}
+@media(max-width:767px){.btnperso2 {margin-top: 5em; font-size: 1em;}}
 @media(min-width:768px){.btnperso2 {margin-top: 6em;}}
 @media(min-width:992px){.btnperso2 {margin-top: 1.5em;}}
 @media(min-width:1200px){.btnperso2 {margin-top: 5.5em;}}
