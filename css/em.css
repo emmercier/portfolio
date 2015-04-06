@@ -250,7 +250,6 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
 /* ********************************
         SECTION PORTFOLIO
 ******************************** */
-
 #portfolio .portfolio-item {right: 0; margin: 0 0 4em 0;}
 #portfolio .portfolio-item .portfolio-link {display: block; position: absolute; margin: auto; max-width: 400px;}
 #portfolio * {z-index: 2;}
@@ -268,16 +267,20 @@ p.service {padding : 0 0.8em 0 0.8em; text-align: justify;}
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.4);
     font-family: "Playfair Display",Helvetica,Arial,sans-serif;
     font-size: 1.1em;
+    font-style: italic;
     color: #ff271b;
     background-color: transparent;}
 
 .btnperso2:hover, .btnperso2:focus, .btnperso2:active, .open .dropdown-toggle.btnperso2 {
-    border-color: #080e30; color: #080e30;}
+    border-color: #fffdf1; color: #fffdf1; background-color: #ff271b;}
 
 @media(max-width:767px){.btnperso2 {margin-top: 5em;}}
 @media(min-width:768px){.btnperso2 {margin-top: 6em;}}
 @media(min-width:992px){.btnperso2 {margin-top: 1.5em;}}
 @media(min-width:1200px){.btnperso2 {margin-top: 5.5em;}}
+
+
+.portfolio-modal .btnperso2 {margin-top: 1em;}
 
 /* ********************************
         SECTION CONTACT
@@ -346,6 +349,9 @@ section h2.bjr { margin-top: 1em;font-size: 2.5em;}
 
 section h3.service-heading {font-size: 1.5em; margin-top: 0.5em; margin-bottom: 1.5em;}
 
+.portfolio-modal h3 {font-size: 1.5em; margin-top:2em; margin-bottom: 0.5em;}
+
+
 
 /* ********************************
             AUTRES
@@ -355,17 +361,17 @@ strong {color:#ff271b; font-weight: 400;}
 
 a {color: #ff271b;}
 a.underline {color: #080e30; border-bottom: 1.5px dotted #ff271b}
-a.underline:hover, a.underline:focus, a.underline:active {color: #ff271b; border-bottom: 1.5px dotted #080e30; -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;}
+a.underline:hover, a.underline:focus, a.underline:active {color: #ff271b; border-bottom: 1.5px dotted #080e30;}
 
 a:hover, a:focus, a:active, a.active {color: #ff271b; text-decoration: none;}
 
 a.social:hover, a.social:focus {opacity: 0.7;}
 
 ul{list-style-type:none;}
+ul.projets{padding:0; font-size:1em; line-height: 1.75}
+.contexte {font-size:1em;}
+
+.orange{color: #ff271b;}
 
 .btn:focus,.btn:active,.btn.active,.btn:active:focus {outline: 0;}
 
@@ -386,6 +392,9 @@ body {webkit-tap-highlight-color: #ff271b;}
 ******************************** */
 
 .img-centered {margin: 0 auto;}
+@media(max-width: 991px){.modal-body img.prem {margin-right: 0.1em;}}
+@media(min-width: 992px){.modal-body img.prem {margin-right: 0.5em;}}
+
 
 
 /* ********************************
@@ -493,7 +502,7 @@ fieldset[disabled] .btn-xl.active {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: center;
+    text-align: left;
     background-attachment: fixed;
     background-image: url(../img/archesbeige.png);
     background-position: center center;
@@ -502,7 +511,10 @@ fieldset[disabled] .btn-xl.active {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+}.modal-body {
+    text-align: center;}
+
+
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
@@ -521,8 +533,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .portfolio-modal .modal-content ul.list-inline {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 3em;
 }
 
 .portfolio-modal .modal-content img {
@@ -568,6 +579,7 @@ fieldset[disabled] .btn-xl.active {
     display: none;
     opacity: 0;
 }
+
 
 
 /* ********************************
