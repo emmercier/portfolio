@@ -8,24 +8,28 @@
 
 @import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,400italic,500italic);
 
 
 body {
     overflow-x: hidden;
     font-family: "Playfair Display",Helvetica,Arial,sans-serif;
+    font-weight: 400;
     color: #080e30;
     background-attachment: fixed;
-    background-image: url(../img/archesbeige.png);
+    background-image: url(../img/archesbeige2.png);
     background-position: center center;
     background-repeat: repeat-x;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; 
 }
 
 @media(max-width:767px) {section {padding: 50px 0;}}
 @media(min-width:768px) {section {padding: 100px 0;}}
+
+p {font-size: 1.2em; line-height: 1.75;}
 
 /* ********************************
             NAVIGATION
@@ -66,50 +70,36 @@ body {
     border-color: #ff271b;
     background-color: #ff271b;}
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fffdf1;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #fffdf1;}
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #ff271b;}
 
 
-
-
 /* .navbar-default .navbar-nav>li>a{color:#080e30} */
-.navbar li>a.navaccueil{
-    color:#080e30;
-}
+.navbar li>a.navaccueil {color:#080e30;}
 
 /* .navbar-default.navbar-shrink */
-.navbar-shrink li>a.navaccueil{
-    color:#fffdf1;
-}
-
+.navbar-shrink li>a.navaccueil {color:#fffdf1;}
 
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {outline: 0; color: #ff271b;}
-
 
 @media(max-width:767px) {
 .navbar-default .nav li a {outline: 0; color: #fffdf1;}
 .navbar-default.navbar-shrink .nav li a {color: #fffdf1;}
 .navbar-default .navbar-nav>.active>a { background-color: transparent; color: #ff271b; padding-bottom: 0.5em;}}
 
-
 @media(min-width:768px) {
 .navbar-default .navbar-nav>.active>a { color: #ff271b; background-color: transparent; padding-bottom: 0.5em;}}
 
 .navbar-default .navbar-nav>.active>a.logoem,
 .navbar-default .navbar-nav>.active>a.logoem:hover {
-    color: #fffdf1;
-    border: none;
-    background-color: transparent;}
+    color: #fffdf1; border: none; background-color: transparent;}
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color:  #ff271b;
-    background-color: transparent;
-    padding-bottom: 0.5em;}
+    color: #ff271b; background-color: transparent; padding-bottom: 0.5em;}
 
 @media(min-width:768px) {
     .navbar-default {
@@ -120,27 +110,17 @@ body {
         -moz-transition: padding .2s ease-out;
         transition: padding .2s ease-out;}
 
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;}
-
-    .navbar-default.navbar-shrink { /* nav descendante*/
-        padding: 0.2em 0;
-        background-image: url(../img/em.png);
-        background-position: center;
-        background-repeat: no-repeat;}
-
-/*     .navbar-default .navbar-shrink>.active>a {color: #fffdf1;} */
-    .navbar-default .navbar-shrink a.navaccueil{
-    color:#fffdf1;
-}
+    .navbar-default .navbar-nav>.active>a {border-radius: 3px;}
 }
 
+/* nav descendante*/
+.navbar-default.navbar-shrink {
+    padding: 0.2em 0;
+    background-image: url(../img/em.png);
+    background-position: center;
+    background-repeat: no-repeat;}
 
-/* ********************************
-            PARAGRAPHES
-******************************** */
-
-p {font-size: 1.1em; line-height: 1.75;}
+.navbar-default .navbar-shrink a.navaccueil {color:#fffdf1;}
 
 
 /* ********************************
@@ -151,13 +131,13 @@ p {font-size: 1.1em; line-height: 1.75;}
 
 .intro-text {padding-top: 100px; padding-bottom: 100px;}
 
- .intro-text .intro-lead-in {
+.intro-text .intro-lead-in {
     font-family: "Great Vibes",Times,serif;
     font-style: normal;
     line-height: auto;
     text-shadow: 3px 3px 5px rgba(0,0,0, 0.4);}
 
- .intro-text .intro-heading {
+.intro-text .intro-heading {
     margin-top: -0.5em;
     margin-bottom: 2em;
     font-family: "Great Vibes",Times,serif;
@@ -168,35 +148,35 @@ p {font-size: 1.1em; line-height: 1.75;}
 
 @media(max-width:359px) {
     .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3em;}
-     .intro-text .intro-heading {font-size: 2.3em;}
-     .fa {margin-top: 3em;}
+    .intro-text .intro-heading {font-size: 2.3em;}
+    .fa {margin-top: 3em;}
 }
 
 @media(min-width:360px) and (max-width: 479px){
-     .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3.7em;}
-     .intro-text .intro-heading {margin-bottom: -1em; font-size: 2.5em;}
-     #page-top .fa {margin-top: 7em;}
+    .intro-text .intro-lead-in {margin-top: 1.5em; font-size: 3.7em;}
+    .intro-text .intro-heading {margin-bottom: -1em; font-size: 2.5em;}
+    #page-top .fa {margin-top: 7em;}
 }
 
 @media(min-width:480px) {
-     .intro-text {padding-top: 16em;padding-bottom: 4em;}
-     .intro-text .intro-lead-in {font-size: 4.8em;}
-     .intro-text .intro-heading {font-size: 2.5em;}
-     #page-top .fa {margin-top: 3em;}
+    .intro-text {padding-top: 16em;padding-bottom: 4em;}
+    .intro-text .intro-lead-in {font-size: 4.8em;}
+    .intro-text .intro-heading {font-size: 2.5em;}
+    #page-top .fa {margin-top: 3em;}
 }
 
 @media(min-width:600px) {
-     .intro-text {padding-top: 16em;padding-bottom: 4em;}
-     .intro-text .intro-lead-in {font-size: 6em;}
-     .intro-text .intro-heading {font-size: 3em;}
-     #page-top .fa {margin-top: 5.5em;}
+    .intro-text {padding-top: 16em;padding-bottom: 4em;}
+    .intro-text .intro-lead-in {font-size: 6em;}
+    .intro-text .intro-heading {font-size: 3em;}
+    #page-top .fa {margin-top: 5.5em;}
 }
 
 @media(min-width:768px) {
-     .intro-text {padding-top: 16em;padding-bottom: 3em;}
-     .intro-text .intro-lead-in {font-size: 7em;}
-     .intro-text .intro-heading {font-size: 3.5em;}
-     #page-top .fa {margin-top: 4em; font-size: 3em;}
+    .intro-text {padding-top: 16em;padding-bottom: 3em;}
+    .intro-text .intro-lead-in {font-size: 7em;}
+    .intro-text .intro-heading {font-size: 3.5em;}
+    #page-top .fa {margin-top: 4em; font-size: 3em;}
 }
 
 @media(min-width:1200px) {#page-top .fa {margin-top: 3em; font-size: 3em;}}
@@ -290,6 +270,8 @@ p.contact {font-size: 1.25em;}
 p.dispo {font-size: 1.5em; font-style: italic; margin-bottom: 1.5em;}
 @media(max-width: 600px) {p.contact {font-size: 1.1em;}.list-inline>li {margin-right:-0.8em;}}
 
+p.alert {font-size: 1em;}
+
 hr.soush2contact {width: 8em; color:#fffdf1; margin-top: 1.5em; margin-bottom: 3em;}
 
 section#contact {background-image: url(../img/archesbleues.png); background-position: center; background-repeat: repeat repeat; color: #fffdf1;}
@@ -352,12 +334,13 @@ section h3.service-heading {font-size: 1.5em; margin-top: 0.5em; margin-bottom: 
 .portfolio-modal h3 {font-size: 1.5em; margin-top:2em; margin-bottom: 0.5em;}
 
 
-
 /* ********************************
             AUTRES
 ******************************** */
 
 strong {color:#ff271b; font-weight: 400;}
+
+.orange{color: #ff271b;}
 
 a {color: #ff271b;}
 a.underline {color: #080e30; border-bottom: 1.5px dotted #ff271b}
@@ -371,16 +354,12 @@ ul{list-style-type:none;}
 ul.projets{padding:0; font-size:1em; line-height: 1.75}
 .contexte {font-size:1em;}
 
-.orange{color: #ff271b;}
-
 .btn:focus,.btn:active,.btn.active,.btn:active:focus {outline: 0;}
 
 ::-moz-selection {text-shadow: none;background: #ff271b;}
-
 ::selection {text-shadow: none; background: #ff271b;}
 
 img::selection {background: 0 0;}
-
 img::-moz-selection {background: 0 0;}
 
 body {webkit-tap-highlight-color: #ff271b;}
@@ -396,63 +375,13 @@ body {webkit-tap-highlight-color: #ff271b;}
 @media(min-width: 992px){.modal-body img.prem {margin-right: 0.5em;}}
 
 
-
 /* ********************************
             BOUTONS
 ******************************** */
 
-/* Boutons dans Modal à modifier */
-.btn-primary {
-    border-color: #ff271b;
-    text-transform: uppercase;
-    font-family: "Playfair Display",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #ff271b;}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color: #fec503;}
-
-/* .btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color: #ff271b;
-    background-color: #ff271b;
-}
-.btn-primary .badge {
-    color: #ff271b;
-    background-color: #fff;
-} */
-/* Fin boutons Modal */
-
-
 /* Bouton beige Contact*/
 .btn-xl {
-    padding: 20px 40px;
+    padding: 20px 35px;
     border: 0.15em;
     border-style: dotted;
     border-color: #fffdf1;
@@ -490,8 +419,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: #ff271b;
 }
 
-.btn-xl .badge {color: #ff271b; background-color: #fff;}
-
 
 /* ********************************
         PORTFOLIO MODAL
@@ -511,19 +438,13 @@ fieldset[disabled] .btn-xl.active {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }.modal-body {
     text-align: center;}
 
+.portfolio-modal .modal-content h2 {margin-bottom: 15px; font-size: 3em;}
 
-
-.portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
-    font-size: 3em;
-}
-
-.portfolio-modal .modal-content p {
-    margin-bottom: 30px;
-}
+.portfolio-modal .modal-content p {margin-bottom: 30px;}
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
@@ -532,13 +453,9 @@ fieldset[disabled] .btn-xl.active {
     font-style: italic;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
-    margin-top: 3em;
-}
+.portfolio-modal .modal-content ul.list-inline {margin-top: 3em;}
 
-.portfolio-modal .modal-content img {
-    margin-bottom: 2em;
-}
+.portfolio-modal .modal-content img {margin-bottom: 2em;}
 
 .portfolio-modal .close-modal {
     position: absolute;
@@ -550,9 +467,7 @@ fieldset[disabled] .btn-xl.active {
       cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
+.portfolio-modal .close-modal:hover {opacity: .3;}
 
 .portfolio-modal .close-modal .lr {
     z-index: 1051;
@@ -575,140 +490,93 @@ fieldset[disabled] .btn-xl.active {
     transform: rotate(90deg);
 }
 
-.portfolio-modal .modal-backdrop {
-    display: none;
-    opacity: 0;
-}
-
+.portfolio-modal .modal-backdrop {display: none; opacity: 0;}
 
 
 /* ********************************
             HEXAGONES
 ******************************** */
 
-.clear { clear: both; }
-.templatemorow1, .templatemorow2 { margin: 0 0 15% 0;}
-.hex { width: 20%; float: left;}
-
-
+.clear {clear: both;}
+.templatemorow1, .templatemorow2 {margin: 0 0 15% 0;}
+.hex {width: 20%; float: left;}
 
 @media(max-width:359px) {
-    .templatemorow1  { margin: 0 0 70% 0;}
-    .templatemorow2  { margin: 0 0 60% 0;}
-    .hex-offset1 { margin-left: 0%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 41%; margin-top: 24%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 0%; margin-top: -22%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 41%; margin-top: 2%;} /* espacement hexa2 ligne 2 */
-    .hexagon2 {
-    position: absolute;
-    width: 140px;
-    height: 370px;
-    top: -85px;
-}
+    .templatemorow1 {margin: 0 0 70% 0;}
+    .templatemorow2 {margin: 0 0 60% 0;}
+    .hex-offset1 {margin-left: 0%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 41%; margin-top: 24%;} /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 0%; margin-top: -22%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 41%; margin-top: 2%;} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 140px; height: 370px; top: -85px;}
 }
 
 @media(min-width:360px) and (max-width: 479px) {
-    .templatemorow1  { margin: 0 0 75% 0;}
-    .templatemorow2  { margin: 0 0 50% 0;}
-    .hex-offset1 { margin-left: 1%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 41%; margin-top: 25%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 1%; margin-top: -25%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 41%; margin-top: 0%;} /* espacement hexa2 ligne 2 */
-    .hexagon2 {
-    position: absolute;
-    width: 160px;
-    height: 390px;
-    top: -85px;
-}
+    .templatemorow1 {margin: 0 0 75% 0;}
+    .templatemorow2 {margin: 0 0 50% 0;}
+    .hex-offset1 {margin-left: 1%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 41%; margin-top: 25%;} /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 1%; margin-top: -25%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 41%; margin-top: 0%;} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 160px; height: 390px; top: -85px;}
 }
 
 @media (min-width: 480px) {
-    .templatemorow1  { margin: 0 0 55% 0;}
-    .templatemorow2  { margin: 0 0 55% 0;}
-    .hex-offset1 { margin-left: 11%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 44%; margin-top: 23%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 11%; margin-top: -10%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 44%; margin-top: 13%;} /* espacement hexa2 ligne 2 */
-    .hexagon2 {
-    position: absolute;
-    width: 180px;
-    height: 390px;
-    top: -85px;
-}
+    .templatemorow1 {margin: 0 0 55% 0;}
+    .templatemorow2 {margin: 0 0 55% 0;}
+    .hex-offset1 {margin-left: 11%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 44%; margin-top: 23%;} /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 11%; margin-top: -10%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 44%; margin-top: 13%;} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 180px; height: 390px; top: -85px;}
 }
 
 @media (min-width: 600px) {
-    .templatemorow1  { margin: 0 0 47% 0;}
-    .templatemorow2  { margin: 0 0 45% 0;}
-    .hexagon2 {
-    position: absolute;
-    width: 180px;
-    height: 390px;
-    top: -85px;
-    }
-    .hex-offset1 { margin-left: 20%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 46%; margin-top: 19%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 20%; margin-top: -9%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 46%; margin-top: 10%;} /* espacement hexa2 ligne 2 */
-
+    .templatemorow1 {margin: 0 0 47% 0;}
+    .templatemorow2 {margin: 0 0 45% 0;}
+    .hex-offset1 {margin-left: 20%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 46%; margin-top: 19%;} /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 20%; margin-top: -9%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 46%; margin-top: 10%;} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 180px; height: 390px; top: -85px;}
 }
 
 @media(min-width:700px){
-    .templatemorow1  { margin: 0 0 40% 0;}
-    .templatemorow2  { margin: 0 0 37% 0;}
-    .hexagon2 {
-    position: absolute;
-    width: 180px;
-    height: 390px;
-    top: -85px;
-    }
-    .hex-offset1 { margin-left: 24%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 46%; margin-top: 16%; } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 24%; margin-top: -8%;} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 46%; margin-top: 8%;} /* espacement hexa2 ligne 2 */
+    .templatemorow1 {margin: 0 0 40% 0;}
+    .templatemorow2 {margin: 0 0 37% 0;}
+    .hex-offset1 {margin-left: 24%; margin-top: 0%;} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 46%; margin-top: 16%;} /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 24%; margin-top: -8%;} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 46%; margin-top: 8%;} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 180px; height: 390px; top: -85px; }
 }
 
 @media(min-width:768px){
-    .templatemorow1  { margin: 0 0 25% 0;}
-    .templatemorow2  { margin: 0 0 20% 0;}
-    .hexagon2 {
-    position: absolute;
-    width: 180px;
-    height: 390px;
-    top: -85px;
-    } 
-    .hex-offset1 { margin-left: 5%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 45%; margin-top: 0% } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 25%;  margin-top: -10%} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 65%; margin-top: -10%} /* espacement hexa2 ligne 2 */
+    .templatemorow1 {margin: 0 0 25% 0;}
+    .templatemorow2 {margin: 0 0 20% 0;}
+    .hex-offset1 {margin-left: 5%; margin-top: 0%} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 45%; margin-top: 0%} /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 25%; margin-top: -10%} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 65%; margin-top: -10%} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 180px; height: 390px; top: -85px;} 
 }
 
 @media(min-width:992px){ 
-    .hexagon2 {
-    position: absolute;
-    width: 190px;
-    height: 395px;
-    top: -85px;
-    } 
-    .hex-offset1 { margin-left: 13%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
-    .hex-offset2 { margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
-    .hex-offset3 { margin-left: 30%;  margin-top: -13%} /* espacement hexa1 ligne 2 */
-    .hex-offset4 { margin-left: 64%; margin-top: -13%} /* espacement hexa2 ligne 2 */
+    .hex-offset1 {margin-left: 13%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
+    .hex-offset2 {margin-left: 47%; margin-top: 0% } /* espacement hexa2 ligne 1 */
+    .hex-offset3 {margin-left: 30%;  margin-top: -13%} /* espacement hexa1 ligne 2 */
+    .hex-offset4 {margin-left: 64%; margin-top: -13%} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 190px; height: 395px; top: -85px;} 
 }
 
 @media(min-width:1200px){
-    .templatemorow1  { margin: 0 0 16% 0;}
-    .templatemorow2  { margin: 0 0 15% 0;}
-    .hexagon2 {
-    position: absolute;
-    width: 220px;
-    height: 440px;
-    top: -85px;
-    }
+    .templatemorow1 {margin: 0 0 16% 0;}
+    .templatemorow2 {margin: 0 0 15% 0;}
     .hex-offset1 { margin-left: 16%;  margin-top: 0%} /* espacement hexa1 ligne 1 */
     .hex-offset2 { margin-left: 48%; margin-top: 0% } /* espacement hexa2 ligne 1 */
     .hex-offset3 { margin-left: 32%;  margin-top: -5%} /* espacement hexa1 ligne 2 */
     .hex-offset4 { margin-left: 64%; margin-top: -5%} /* espacement hexa2 ligne 2 */
+    .hexagon2 {position: absolute; width: 220px; height: 440px; top: -85px;}
 }
 
 .hexagon {
@@ -766,7 +634,7 @@ fieldset[disabled] .btn-xl.active {
 /*------------------------------------------------------
     Gallery Styles 
 --------------------------------------------------------*/
-/*Survol des hexa et icones déploiement*/
+
 .gallery-item .overlay {
   position: absolute;
   top: 0;
@@ -800,12 +668,8 @@ fieldset[disabled] .btn-xl.active {
     transform: rotate(30deg) translate(-17px,-10px);
 }
 
+.client {font-style: italic; text-transform: none; width: 4em;}
 
-.client {
-    font-style: italic;
-    text-transform: none;
-    width: 4em;
-}
 
 /*------------------------------------------------------
         Hexagone Qui suis-je Styles 
@@ -829,18 +693,21 @@ fieldset[disabled] .btn-xl.active {
    .about{width: 25%;}
    .lignesup {margin: -37px 0 0 0;}
 }
+
 @media(min-width:480px) {
     #myHeader2, #myHeader5 {margin-right: 60px; padding-top: 10px;}
    .texteabout {font-size: 0.9em; margin: 3em 0.15em 1em 0.2em;} 
    .about{width: 25%;}
    .lignesup {margin: -55px 0 0 0;}
 }
+
 @media(min-width: 600px) {
     #myHeader2, #myHeader5 {margin-right: 60px; padding-top: 10px;}
    .texteabout {font-size: 1em; margin: 3em 0.15em 1em 0.2em;} 
    .about{width: 20%;}
    .lignesup {margin: -55px 0 0 0;}
 }
+
 @media(min-width: 700px) {
     #myHeader2, #myHeader5 {margin-right: 65px; padding-top: 10px;}
    .texteabout {font-size: 1em; margin: 3em 0.15em 1em 0.2em;} 
@@ -860,9 +727,10 @@ fieldset[disabled] .btn-xl.active {
    .about{width: 27%;}
    .lignesup {margin: -50px 0 0 0;}
 }
+
 @media(min-width: 1200px){
     #myHeader2, #myHeader5 {margin-right: 70px; padding-top: 10px;}
-   .texteabout {margin-top: 13.5em; font-size: 1.2em;} 
+   .texteabout {margin-top: 12em; font-size: 1.2em;} 
    .about{width: 27%;}
    .lignesup {margin: -63px 0 0 0;}
    .rose {margin-bottom: 5.1em;}
